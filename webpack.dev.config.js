@@ -14,6 +14,7 @@ module.exports = {
         hot: true,
         open: true
     },
+    devtool: 'source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'dev.js'
