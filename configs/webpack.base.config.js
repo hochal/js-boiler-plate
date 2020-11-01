@@ -1,5 +1,17 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
 module.exports = {
-  entry: './src/js/index.js',
+  entry: path.resolve(__dirname, '../src/js/index.js'),
+  output: {
+    path: path.resolve(__dirname, '../dist'),
+    filename: 'build.js'
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true // 불러오는 정적 빌드 파일에 쿼리스트링으로 해시값 추가
+    })
+  ],
   module: {
     rules: [
       {
