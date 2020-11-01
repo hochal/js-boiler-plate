@@ -7,11 +7,17 @@
     "build": "webpack --config webpack.dev.config.js",
     "start": "webpack-dev-server --config webpack.dev.config.js",
     "production": "webpack",
-    "test": "webpack"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/woriwori/js-boiler-plate.git"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "testRegex": "\\.test\\.js$"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +26,11 @@
   },
   "homepage": "https://github.com/woriwori/js-boiler-plate#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.6.1",
     "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
