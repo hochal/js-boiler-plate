@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -10,7 +11,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true // 불러오는 정적 빌드 파일에 쿼리스트링으로 해시값 추가
-    })
+    }),
+    new CleanWebpackPlugin()
   ],
   module: {
     rules: [
