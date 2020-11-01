@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.dev.config.js",
-    "start": "webpack-dev-server --config webpack.dev.config.js",
-    "production": "webpack",
+    "build": "webpack --config ./configs/webpack.dev.config.js",
+    "start": "webpack-dev-server --config ./configs/webpack.dev.config.js",
+    "production": "webpack --config ./configs/webpack.config.js",
     "test": "jest"
   },
   "repository": {
