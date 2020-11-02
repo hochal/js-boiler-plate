@@ -1,4 +1,4 @@
-import sum from '@/sum';
+import sum from '@js/sum';
 
 test('multiplication', () => {
   const a = 1;

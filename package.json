@@ -19,7 +19,7 @@
     ],
     "testRegex": "\\.test\\.js$",
     "moduleNameMapper": {
-      "@/(.*)$": "<rootDir>/src/js/$1"
+      "@js/(.*)$": "<rootDir>/src/js/$1"
     }
   },
   "author": "",
