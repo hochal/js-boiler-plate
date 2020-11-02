@@ -1,6 +1,5 @@
-function sum(a, b) {
-  return a + b;
-}
+import sum from '@/sum';
+
 test('multiplication', () => {
   const a = 1;
   const b = 2;
