@@ -18,7 +18,7 @@
       "<rootDir>/node_modules/"
     ],
     "testRegex": "\\.test\\.js$",
-    "moduleNameMapper":{
+    "moduleNameMapper": {
       "@/(.*)$": "<rootDir>/src/js/$1"
     }
   },
@@ -44,11 +44,11 @@
     "jest": "^26.6.1",
     "mini-css-extract-plugin": "^1.2.1",
     "prettier": "^2.1.2",
+    "sass": "^1.28.0",
     "sass-loader": "^10.0.4",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.3.0",
-    "sass": "^1.28.0"
+    "webpack-merge": "^5.3.0"
   }
 }

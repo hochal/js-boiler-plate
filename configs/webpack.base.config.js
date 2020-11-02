@@ -9,8 +9,10 @@ module.exports = {
     filename: 'app.js'
   },
   resolve: {
+    extensions: ['.js', 'css', '.scss'],
     alias: {
-      '@': path.join(__dirname, 'src')
+      '@js': path.join(__dirname, '../src/js'),
+      '@styles': path.join(__dirname, '../src/styles')
     }
   },
   module: {

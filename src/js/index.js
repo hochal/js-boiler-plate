@@ -1,6 +1,6 @@
-import sayHello from './sayHello';
-import styleCSS from '../css/sample.css';
-import styleSCSS from '../css/sample.scss';
+import sayHello from '@js/sayHello';
+import styleCSS from '@styles/sample';
+import styleSCSS from '@styles/sample';
 
 if (module.hot) {
   module.hot.accept();
